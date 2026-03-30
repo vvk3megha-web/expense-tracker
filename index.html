@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Level 1</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+    <h1 id="headingone">💰 Smart Money Hacker</h1>
+    <div class="total-balance">
+        <h2>💳Total Balance</h2>
+        <p id="balance">$0</p>
+    </div>
+   
+   <div class="summary">
+      <div class="summary-box Income">
+        <h2>INCOME</h2>
+        <p id="income">$0</p>
+    </div>
+    <div class="summary-box Expenses">
+        <h2>EXPENSES</h2>
+        <p id="expenses">$0</p>
+    </div>
+    <div class="summary-box budget">
+    <h2>EXPENSE/TOTAL BUDGET</h2>
+    <p>
+        <span id="expenseDisplay">$0</span> /
+        <span id="budgetDisplay">$0</span>
+    </p>
+</div>
+    </div>
+    <div class="mixed">
+    <h3 id="catlimit">Category limit</h3>
+    <div class="category">
+        <div class="category-box food">
+            <h3> 🍔 Food</h3>
+            <p id="food-spent">Spent : $0</p>
+            <p> ⚠️Limit:3000</p>
+        </div>
+        <div class="category-box travel">
+            <h3> ✈️ Travel</h3>
+            <p id="travel-spent">Spent : $0</p>
+            <p> ⚠️Limit:1000</p>
+        </div>
+        <div class="category-box shop">
+            <h3>🛒 Shopping</h3>
+            <p id="shopping-spent">Spent : $0</p>
+            <p> ⚠️Limit:3000</p>
+        </div>
+        <div class="category-box daily">
+            <h3> 📆 Daily use</h3>
+            <p id="daily-spent">Spent : $0</p>
+            <p> ⚠️Limit: 1000</p>
+        </div>
+  </div>
+  <div class="transaction-section">
+    <h3 id="trans">Add transaction</h3>
+    <div class="row">
+    
+        <input type="number" placeholder="Amount" id="amount">
+    
+   <div class="radio-group">
+        <input type="radio" value="Income" name="money" >Income
+    <input type="radio" value="Expenses" name="money" >Expenses
+    </div>
+
+     <select name="Category" id="category">
+        <option value="" disabled selected>Select Category</option>
+        <option value="food">Food</option>
+        <option value="shopping">Shopping</option>
+        <option value="travel">Travelling</option>
+        <option value="other-use">Other use</option>
+         </select>
+         </div>
+         <button id="add-button"  type="button" onclick="addmoney()">Add Transaction</button>
+         <div class="budgetbutton">
+         <input type="number" id="budgetinput" placeholder="Enter Budget">
+         <button  id="setbudget"onclick="setbudget()"> Set Budget</button>
+         <button onclick="resetApp()">Reset All</button>
+         </div>
+        
+
+  </div>
+  </div>
+  <div class="history-section">
+    <h2> Transaction-History</h2>
+    <ul id="transaction-history">
+
+    </ul>
+
+  </div>
+  </div>
+
+  
+<script src="first.js"></script>    
+</body>
+</html>

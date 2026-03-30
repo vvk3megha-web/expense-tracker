@@ -1,0 +1,322 @@
+body{background:linear-gradient(to bottom,skyblue,rgb(28, 143, 188));
+margin:0;
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+#headingone{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color:#07265f;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.2);
+}
+
+
+.container{
+    max-width: 900px;
+    margin:auto;
+}
+.total-balance{
+    background-color:darkblue;
+    padding: 15px;
+   border-radius:20px ;
+   text-align: center;
+   color: aliceblue;
+   margin-bottom: 20px;
+   font-weight: bold;
+   font-size: 30px;
+   box-shadow: 5px 10px 12px black;
+
+}
+
+
+.total-balance h2{
+    text-shadow: 5px 5px 20px white;
+}
+.summary{
+    display:flex;
+    gap:40px;
+    
+    margin-bottom: 20px;
+    justify-content: center;
+   
+
+}
+.summary-box{
+    box-shadow: 5px 5px 10px black;
+    background-color: white;
+    padding:10px;
+  
+border-radius: 30px;
+text-align:center;
+color: white;
+flex:1;
+border:2px solid black;
+ box-shadow: 5px 5px 12px black;
+
+}
+
+
+
+.Income{
+  background: linear-gradient(to bottom, #56ab2f, #a8e063);
+}
+.Expenses{
+ background: linear-gradient(to top, #f96a50, #ea3535);
+    
+}
+.budget{
+   background: linear-gradient(to top, #f7b733, #fc8c00);
+
+}
+
+
+.summary-box h2{
+    font-size:18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid wheat;
+    padding-bottom: 10px;
+    
+
+}
+.summary-box p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.category{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:5px;
+    }
+    .category-box{
+     padding:10px;
+     color:aliceblue;
+     border:2px solid black;
+     border-radius: 10px;
+    width: 160px;
+    text-align: center;
+    box-shadow: 3px 6px 12px black;
+}
+.food{
+    background: linear-gradient(to bottom, #f6cf80, #fc8c00);
+
+}
+ .travel{
+    background:linear-gradient(to bottom,rgb(0, 255, 166),rgb(23, 139, 0));
+ }
+ .shop{
+    background:linear-gradient(to bottom,rgb(255, 192, 248),rgb(231,84,128));
+ }
+ .daily{
+    background: linear-gradient(to bottom,rgb(214,180,252),rgb(135,31,120));
+ }
+
+ .category-box h3{
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.759);
+    margin:2px;
+    padding-bottom: 9px;
+    text-align:left;
+ 
+
+
+
+ }
+ .category-box p{
+    font-size: 17px;
+    text-align: left;
+    margin:15px;
+
+ }
+ .mixed{
+    background-color: rgb(219, 226, 226);
+    padding:20px;
+
+ }
+ #catlimit{
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: bold;
+    margin-left: 10px;
+     color:rgba(0, 0, 0, 0.768);
+    
+}
+
+#trans{
+     border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+
+
+    
+.transaction-section{
+border-radius: 10px;
+margin:25px;
+padding:15px;
+border:2px solid grey;
+}
+
+.transaction-section h3{
+    margin-top:5px;
+    color:rgba(0, 0, 0, 0.768);
+}
+ .row {
+    display:flex;
+    gap:20px;
+    justify-content: flex-start;
+    margin:7px;
+    margin-left: 3px;
+
+     
+ }
+
+ .budgetbutton{
+    display:flex;
+    justify-content: flex-start;
+    margin:7px;
+    gap:20px;
+    margin-left: 3px;
+ }
+ #add-button{
+    margin:7px;
+    width:120px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(0, 47, 235);
+    color: white;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    font-weight: bold;
+
+ }
+
+ #setbudget{
+    background-color: rgb(0, 47, 235);
+    color: white;
+    border-radius:10px;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    font-weight: bold;
+
+ }
+
+ #add-button:hover{
+    
+    transform: scale(1.05);
+    
+ }
+ #setbudget:hover{
+    transform: scale(1.05);
+
+
+ }
+
+ .history-section{
+    background:linear-gradient(to bottom,rgb(237, 234, 247),rgb(245, 243, 247));
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    
+ }
+ .history-section h2{
+
+  margin-bottom: 20px;
+  font-size: 25px;
+  color:rgba(0, 0, 0, 0.768);
+  margin-top: 30px;
+  margin-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom:2px solid grey;
+ }
+
+ .history-section ul {
+  list-style: none;
+
+}
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding-left: 30px;
+ padding-right: 30px;
+ padding-bottom: 5px;
+  margin: 20px;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  
+  border-bottom:2px solid rgb(10, 3, 3);
+  transform: 0.2s;
+  position: relative;
+}
+
+
+.Incomeclass {
+    background: linear-gradient(to right, #c6f4b0, #d0f4a3);
+    color:rgba(7, 70, 30, 0.768);
+}
+
+.Expensesclass {
+    background: linear-gradient(to right, #f9bcca, #f9b8ad);
+  color:rgba(107, 3, 3, 0.768);
+}
+
+.right{
+   font-weight: bolder;
+   font-size: 25px;
+
+}
+
+
+
+
+.category{
+   font-size:23px ;
+   font-weight: bolder;
+   margin: 2px;
+
+}
+.title{
+   font-size: 15px;
+   margin: 15px 0 5px 0;
+   
+}
+
+.transaction:hover{
+   transform: scale(1.02);
+
+}
+.delete-btn {
+     background: linear-gradient(to right, #ffe8e8, #f9c0b5); 
+    border: none;
+    box-shadow: 0px 0px 20px black;
+   
+
+  
+    color: red;
+    font-weight: bold;
+    border-radius: 20px;
+    width: auto;
+    
+    cursor: pointer;
+    margin-left: 80px;
+    margin-right: 15px;
+     position: absolute;
+    right: 15px;
+    bottom: 10px;
+    padding: 2px 5px;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background: red;
+    color:white;
+}
+
